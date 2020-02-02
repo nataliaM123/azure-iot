@@ -34,7 +34,7 @@ def get_sensor_blood_sugar():
     return blood_sugar
 	
 def aux_validate_connection_string():
-    if not AUX_CONNECTION_STRING.startswith( 'HostName=' ):
+    if not AUX_CONNECTION_STRING.startswith( 'HostName=icaiiotlabgroup2020.azure-devices.net;DeviceId=simulatedDevice;SharedAccessKey=pXVZkcTX7bxbJzU8uC8SHyXaYBdcvbgqWwXNjQiAz9c=' ):
         print "ERROR  - YOUR IoT HUB CONNECTION STRING IS NOT VALID"
         print "FORMAT - HostName=your_iot_hub_name.azure-devices.net;DeviceId=your_device_name;SharedAccessKey=your_shared_access_key"
         sys.exit()
